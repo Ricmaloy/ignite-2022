@@ -1,0 +1,164 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-top: 64px;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+}
+
+.infos p:first-child {
+  color: var(--blue-light);
+}
+.infos p:last-child {
+  color: var(--purple-light);
+}
+
+.infos p span {
+  width: 25px;
+  height: 19px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--gray-400);
+  margin-left: 8px;
+  border-radius: 999px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task {
+  width: 100%;
+  height: 72px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.task input[type="radio"] {
+  width: 18px;
+  height: 18px;
+
+  position: relative;
+}
+
+.task input[type="radio"]::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  box-sizing: border-box;
+  background-color: var(--gray-500);
+  border-radius: 9999px;
+  border: 2px solid var(--blue-light);
+}
+
+.task input[type="radio"]:checked:before {
+  content: "✓";
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  box-sizing: border-box;
+  background-color: var(--purple-dark);
+  border: none;
+  border-radius: 9999px;
+  color: var(--gray-100);
+  text-align: center;
+}
+
+.task p {
+  flex: 1;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--gray-100);
+}
+.task .done {
+  text-decoration: line-through;
+}
+
+.task button {
+  width: 24px;
+  height: 24px;
+
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.task button:hover{
+  filter: brightness(0.9);
+}
+
+.list-empty {
+  width: 100%;
+  height: 244px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-400);
+}
+
+.list-empty div {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-empty div img {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.list-empty div p {
+  color: var(--gray-300);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.list-empty div span {
+  color: var(--gray-300);
+  font-size: 16px;
+  margin-top: 4px;
+}

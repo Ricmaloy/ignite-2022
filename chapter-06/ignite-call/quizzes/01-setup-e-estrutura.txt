@@ -1,0 +1,29 @@
+01 - Setup e Estrutura
+  
+  Sobre a biblioteca `@ignite-ui/react` marque a alternativa incorreta:
+  a) É um design system que acelera o processo de desenvolvimento provendo componentes e tokens já prontos para uso em aplicações
+  b) É baseado em uma outra biblioteca terceira chamada `stitches` de forma que utiliza da sua lógica de estilização para aprimorar a qualidade da aplicação e experiência de desenvolvimento
+  c) Faz uso de outra biblioteca externa chamada `radix-ui` para criar componentes acessíveis na web proporcionando uma maior usabilidade em aplicações
+  d) Oferece soluções completas que vão desde tokens e componentes à API de validações e autenticação de usuários
+
+  Qual a forma correta de permitir que os tokens do design system estejam disponíveis durante a fase de SSR
+  a) <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssTokens() }} />
+  b) <style id="stitches" dangerouslySetInnerHTML={{ __html: getStyleTokens() }} />
+  c) <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
+  d) <style id="stitches" dangerouslySetInnerHTML={{ __html: getSSRTokens() }} />
+
+  Sobre a propriedade `dangerouslySetInnerHTML` podemos dizer que ela pode ser utilizada com segurança pois possui uma camada de segurança que impede de ataques de script entre sites(XSS)
+  a) Verdadeiro
+  b) Falso
+
+  Qual a maneira correta de enviar um parâmetro num dado script de lint no terminal
+  a) npm run lint --fix
+  b) npm run  --flag --fix
+  c) npm run  --f --fix
+  d) npm run lint -- --fix
+
+  Sobre a finalidade da configuração de pageExtensions no next.config.js podemos afirmar que
+  a) Permite que uma segunda página seja acessado pelo mesmo endereço de arquivo de outra
+  b) Não requer nenhuma mudança nas extensões dos arquivos
+  c) Permite o usuário extender a funcionalidade de File System Routing a arquivos cuja extensão definida por ele
+  d) É permitido que apenas arquivos cuja extensão `.js` sejam utilizados

@@ -1,0 +1,57 @@
+03 - Conexão com Calendário
+
+  O que é a N extAuth
+  a) Uma biblioteca de autenticação baseada no protocolo oAuth para projetos NextJS e implementações Serverless
+  b) Uma biblioteca de gerenciamento de estados capaz de compartilhar entre diversos componentes informações sobre uma autenticação via Gmail do usuário
+  c) Uma biblioteca de componentes que facilitam o processo de desenvolvimento de fluxos de autenticação
+  d) Uma biblioteca de autenticação desenvolvida exclusivamente para aplicações Serverless com autenticação via Web Tokens
+
+  O que melhor define o protocolo de acesso oAuth
+  a) Definido por um usuário permitir a concessão de permissões de acesso a recursos de sua conta para outros provedores de sua escolha
+  b) Definido por uma validação de clientes ou servidores durante uma rede que utiliza uma chave criptográfica. Ele é projetado para executar autenticação forte durante a geração de relatórios para aplicativos
+  c) Definido por um formato de dados de autenticação baseado em XML, que fornece a autorização entre um provedor de identidade e um provedor de serviços
+  d) Definido por um fornecimento de autenticação, contabilidade e autorização centralizadas suficientes para os usuários que usam os serviços de rede. O funcionamento do protocolo ocorre quando o usuário solicita acesso aos recursos da rede, onde o servidor criptografa as credenciais que são inseridas pelo usuário. Depois disso, as credenciais do usuário são mapeadas por meio do banco de dados local e fornecem acesso
+
+  Por padrão quando utilizamos a biblioteca NextAuth e autenticamos via Google a rota de callback deve ser `http://localhost:3000/api/auth/callback/google`
+  a) Verdadeiro
+  b) Falso
+
+  Qual das alternativas abaixo melhor exemplifica uma função de callback do NextAuth que é disparada quando o usuário se autentica
+  a)```
+    callbacks: {
+      async signIn({}) {
+        ...
+      }
+    }
+    ```
+  b)```
+    callbacks: {
+      async logIn({}) {
+        ...
+      }
+    }
+    ```
+  c)```
+    callbacks: {
+      async jwt({}) {
+        ...
+      }
+    }
+    ```
+  d)```
+    callbacks: {
+      async onAuthChange({}) {
+        ...
+      }
+    }
+    ```
+  Qual a definição de Adapter dentro do NextAuth
+  a) É a camada de integração da aplicação à ferramentas de back-end ou mesmo banco de dados a fim de manipular dados da aplicação ou do usuário
+  b) É a forma como a aplicação lida com diversos meios de autenticação (Google, Github, Email, ...) para criar uma única sessão com os dados do usuário
+  c) São serviços externos que podem ser acoplados a lógica de autenticação, como recuperação de conta e two factors authentication
+  d) São extensões ao fluxo de autenticação que ajudam no quesito de acessibilidade da aplicação
+
+  Qual a finalidade de criar um arquivo `*.d.ts`
+  a) Sobrescrever o formato de um módulo ou biblioteca e ajudar a melhorar a integração com ferramentas de desenvolvimento
+  b) Documentar as declarações de um módulo para que outros desenvolvedores possam copiar
+  c) Impedir que tais declarações de um módulo sejam enviadas ao Github

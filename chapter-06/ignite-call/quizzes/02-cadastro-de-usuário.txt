@@ -1,0 +1,80 @@
+02 - Cadastro de usuário
+  Assinale a opção correta para exportar um retorno padrão (default) de um arquivos
+  a) export { default } from './home'
+  b) export { default as Home } from './home'
+  c) export Home from './home'
+  d) export * as Home from './home'
+
+  Assinale a alternativa que descreve corretamente a forma de estilizar um componente terceiro dentro do arquivo de estilização
+  a)```
+    import { Text } from '@ignite-ui/react'
+    export const Header = styled('div', {
+      Text: {
+        color: '$gray200',
+      },
+    })
+    ```
+  b)```
+    import { Text } from '@ignite-ui/react'
+    export const Header = styled('div', {
+      `${Text}`: {
+        color: '$gray200',
+      },
+    })
+    ```
+  c)```
+    import { Text } from '@ignite-ui/react'
+    export const Header = styled('div', {
+      [`${Text}`]: {
+        color: '$gray200',
+      },
+    })
+    ```
+  d)```
+    import { Text } from '@ignite-ui/react'
+    export const Header = styled('div', {
+      [(Text)]: {
+        color: '$gray200',
+      },
+    })
+    ```
+  Com qual função do `useForm` podemos definir de maneira declarativa o valor de uma informação
+  a)`handleValue`
+  b)`setValue`
+  c)`setField`
+  d)`SetFieldValue`
+    
+  Assinale a alternativa incorreta sobre o uso da biblioteca `zod`
+  a) zod é uma biblioteca que permite a declaração de qualquer tipo de dado, desde strings à objetos aninhados
+  b) Para declarar um schema de um objeto utilizamos a propriedade `.object()`
+  c) É possível definir regras e transformações nos dados declarados 
+  d) A biblioteca `zod` por sí só é capaz de realizar validações e tratar quaisquer eventuais erros nos seus dados previamente definidos
+
+  Quais recursos são possíveis em aplicações implantadas em modelos Serverless
+  a) Web Sockets
+  b) Long Running Process 
+  c) Escrita de arquivos locais
+  d) Nenhuma das opções acima
+
+  O que é o Prisma
+  a) Um ORM fortemente integrado ao typescript que facilita o acesso e manipulação do banco de dados
+  b) Um Framework backend Open source utilizado no desenvolvimento de sistemas para Web
+  c) Um banco de dados Relacional que usa e estende a linguagem SQL combinada com muitos recursos que armazenam e dimensionam com segurança as cargas de trabalho de dados mais complicadas
+
+  Qual a biblioteca utilizada para realizar a comunicação do front-end com o back-end
+  a) Zod
+  b) Nookies
+  c) Axios
+  d) Prisma
+
+  Assinale a alternativa correta com o nome da função que declara um novo cookie e persistir informações na aplicação
+  a)updateCookie
+  b)submitCookie
+  c)addCookie
+  d)setCookie
+
+  Qual das opções abaixo não representa um dos parâmetros da função `setCookie`
+  a) context
+  b) label
+  c) value
+  d) options

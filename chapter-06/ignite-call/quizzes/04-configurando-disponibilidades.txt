@@ -1,0 +1,74 @@
+04 - Configurando disponibilidade
+
+  Utilizando o React Hook Form como é possível definir um valor inicial para um campo
+  a) Através da propriedade defaultValues dentro do useForm
+  b) Através da propriedade values dentro do useForm
+  c) Através da propriedade defaultFields dentro do useForm
+  d) Através da propriedade defaultProps dentro do useForm
+
+  Assinale a alternativa que melhor define o `useFieldArray`
+  a) Hook para manipular com um conjunto de dados, podendo configurar um formulário de tamanho dinâmico
+  b) Hook para transformar os campos de formulário em uma única string
+  c) Hook que declara os campos do formulário em um array de tamanho imutável
+
+  Qual a necessidade do uso de um `Controller` do React Hook Form
+  a) Quando temos um elemento visual não nativo do html em tela que vai inserir uma informação no formulário
+  b) Quando queremos ter acesso a informações como valor, se está ativo, se é valido entre outros
+  c) Quando queremos que um dado input de dados esteja ligado a uma label
+  d) Quando queremos passar várias propriedades ao elemento e controlá-lo de maneira simples
+
+  'Permite fazer uma validação lógica customizável em que o retorno pode ser apenas verdadeiro ou falso', essa frase define qual propriedade do `zod`
+  a) brand
+  b) safeParse
+  c) transform
+  d) refine
+
+  Considere o seguinte trecho de código e assinale a alternativa correta para o valor de cada type
+  ```
+  const dataSchema = z.object({
+    name: z.string(),
+    age: z.string()
+  }).transform(data => {
+    return {
+      name: data.name,
+      ageInWeeks: Number(data.age) * 5 * 12
+    }
+  })
+
+  type dataSchemaInput = z.input<typeof dataSchema>
+  type dataSchemaOutput = z.output<typeof dataSchema>
+  ```
+  a)```
+    type dataSchemaInput = {
+      name: string;
+      age: string;
+    }
+    type dataSchemaOutput = {
+      name: string;
+      ageInWeeks: number;
+    }
+    ```
+  b)```
+    type dataSchemaInput = {
+      name: string;
+      age: number;
+    }
+    type dataSchemaOutput = {
+      name: string;
+      ageInWeeks: number;
+    }
+    ```
+  c)```
+    type dataSchemaInput = {
+      name: string;
+      age: string;
+    }
+    type dataSchemaOutput = {
+      name: string;
+      ageInWeeks: string;
+    }
+    ```
+
+  Ao estender as tipagens de um módulo é preferível a utilização de Interface pois no typescript interfaces tem por padrão um comportamento de extensão, reaproveitando todas as suas declarações e adicionando novas
+  a) verdadeiro
+  b) Falso

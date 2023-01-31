@@ -108,6 +108,7 @@ export function PrismaAdapter(
         avatar_url: user.avatar_url!,
       }
     },
+
     async updateUser(user) {
       const prismaUser = await prisma.user.update({
         where: {
@@ -119,6 +120,7 @@ export function PrismaAdapter(
           avatar_url: user.avatar_url,
         },
       })
+
       return {
         id: prismaUser.id,
         name: prismaUser.name,
@@ -128,6 +130,7 @@ export function PrismaAdapter(
         avatar_url: prismaUser.avatar_url!,
       }
     },
+
     async linkAccount(account) {
       await prisma.account.create({
         data: {
@@ -145,6 +148,7 @@ export function PrismaAdapter(
         },
       })
     },
+
     async createSession({ sessionToken, userId, expires }) {
       await prisma.session.create({
         data: {
@@ -153,6 +157,7 @@ export function PrismaAdapter(
           session_token: sessionToken,
         },
       })
+
       return {
         userId,
         sessionToken,
@@ -192,6 +197,7 @@ export function PrismaAdapter(
         },
       }
     },
+
     async updateSession({ sessionToken, userId, expires }) {
       const prismaSession = await prisma.session.update({
         where: {
@@ -202,6 +208,7 @@ export function PrismaAdapter(
           user_id: userId,
         },
       })
+
       return {
         sessionToken: prismaSession.session_token,
         userId: prismaSession.user_id,

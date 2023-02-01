@@ -1,0 +1,15 @@
+05 - Atualização de perfil
+
+  Qual é a finalidade da função getServerSideProps no Next.js ?
+  a) Executar lógicas no cliente antes do carregamento da página
+  b) Executar lógicas no lado do servidor e retornar dados para o cliente
+  c) Executar lógicas no cliente durante o carregamento da página
+  d) Executar lógicas no lado do servidor após o carregamento da página
+
+  São vantagens do uso da função `getServerSideProps` para aplicação as alternativas abaixo, exceto:
+  a) Pode evitar a necessidade de solicitações adicionais após o carregamento da página, o que pode resultar em uma experiência mais rápida e suave para o usuário
+  b) Ao fornecer dados pré-processados à página, você pode evitar mudanças de layout desagradáveis devido a conteúdo que precisa ser carregado dinamicamente
+  c) Ao garantir que o conteúdo seja pré-processado no lado do servidor, você pode melhorar a indexação dos dados por mecanismos de pesquisa, o que pode melhorar o SEO da sua aplicação
+  d) Ao utilizar tal função você tem a garantia que o servidor se manterá reativo a alterações no cliente acarretando uma atualização do servidor
+
+  

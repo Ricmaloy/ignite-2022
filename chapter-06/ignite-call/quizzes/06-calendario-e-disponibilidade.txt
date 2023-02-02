@@ -1,0 +1,76 @@
+06 - Calendário e disponibilidades
+
+  Para o que serve a propriedade `revalidate` da função `getStaticProps`
+  a) Indica o intervalo de tempo que uma página estática é recriada e todos as seus dados sejam atualizados
+  b) Indica uma validação pelo servidor a fim de saber se a página ainda existe
+  c) Indica a quantidade de usuários que podem acessar ela num período de 24 horas
+  d) Indica a quantidade em segundos que ela pode ficar sem ser acessada antes de passar a ser uma página dinâmica
+
+  De acordo com o trecho de código a seguir que faz uso da função revalidate em quanto tempo a página deve ser recriada
+  ```
+  export const getStaticProps = async ({}) => {
+    {...}
+    return {
+      props: {
+        user
+      },
+      revalidate: 60 * 60 * 24 * 7,
+    }
+  }
+  ```
+  a) 24 horas
+  b) 72 horas
+  c) 1 hora
+  d) 1 semana
+
+  Ao criarmos uma página estática que faz uso de um parâmetro dinâmico é preciso utilizar de um método para gerar tal página estática em momento de build, qual o nome desse método
+  a) createStaticPaths
+  b) getStaticPaths
+  c) getInitialProps
+  d) setClientPath
+
+  O que acontece com o usuário ao tentar acessar uma página estática com parâmetro dinâmico cujo fallback fora definido como `blocking`
+  a) Os dados da página vão ser gerados pelo lado do servidor e quando completo será exibido ao usuário
+  b) Irá retornar para uma página de erro 404
+  c) Os dados não serão carregados e uma tela em branco é exibida ao usuário
+  d) O usuário vai ser redirecionado à página que estava anteriormente
+
+  Sobre o uso da função `useMemo` podemos citar um benefício como memoizar o retorno de funções que realizam diversos cálculos ou manipulando muitos dados evitando assim um gasto computacional desnecessário
+  a) Verdadeiro
+  b) Falso
+
+  O que deve estar contido do array de dependências de um `useMemo`
+  a) Variáveis que não fazem parte da minha função a ser memoizada
+  b) Nome do arquivo ao qual o `useMemo` está presente
+  c) Todas as variáveis que quando alterarem seu valor devem disparar a função memoizada novamente pois o seu resultado alterou
+  d) O array de dependência deve permanecer vazio
+
+  Qual dos trechos de código abaixo adiciona um ano à uma data do `dayjs`
+  a) `currentDate.addYear(1)`
+  b) `currentDate.nextYear()`
+  c) `currentDate.addTime(1, 'year')`
+  d) `currentDate.add(1, 'year')`
+
+  Num cenário onde não há erros, qual a forma correta de retornar dados ao usuário através da notação JSON com o usi das API Routes do NextJS
+  a) `return res.json({ data })`
+  b) `return res.return({ data })` 
+  c) `return res.emit({ data })`
+  d) `return res.end({ data })`
+
+  Assinale a alternativa que melhor define a biblioteca `react-query`
+  a) React Query é uma biblioteca de gerenciamento de dados que oferece poder e controle sobre o gerenciamento de estado do lado do servidor, busca e armazenamento em cache de requisições e tratamento de erros de maneira simples e declarativa sem afetar o estado global de seu aplicativo.
+  b) React Query é um superset para a biblioteca axios, ela implementa funcionalidades que aumentam a performance e escalonamento da aplicação
+  c) React Query é uma biblioteca de validação e formatação de datas no Javascript, ela dispõe de funções que facilitam quaisquer possíveis cálculos entre datas 
+  d) React Query é uma biblioteca que trás uma série de integrações do ReactJS com os mais famosos banco de dados, facilitando por sua vez a comunicação e operação com os dados armazenados
+
+  O que o `useQuery` do `react-query` utiliza para identificar uma query que já foi feita previamente
+  a) Ele utiliza de um array de chaves identificadoras onde a chave criada através da data e hora que a requisição foi feita
+  b) Ele utiliza de um array de chaves identificadoras e por padrão a chave criada é o primeiro dado retornado pela query
+  c) Ele utiliza de um array de chaves identificadoras onde a chave criada utiliza do endereço de ip do cliente para armazenar a requisição de um usuário
+  d) Ele utiliza de um array de chaves identificadoras onde podemos definir valores que vão identificar os dados retornados, como por exemplo, o nome do dado buscado no banco, um nome para a filtragem de um dados
+
+  Qual a melhor estratégia para condicionar e execução de uma query pelo `useQuery`
+  a) Podemos passar a propriedade `enabled` em um dos parâmetros do useQuery onde a mesma recebe um booleano disparando a execução da query apenas quando o valor do parâmetro for verdadeiro
+  b) Podemos colocar o `useQuery` dentro de um `useEffect` para assim colocar a condição no array de dependência e disparar sempre que essa dependência alterar e o componente ser recriado em tela
+  c) Podemos integrar o hook do `useQuery` dentro da estrutura de `switch case` e condicionar diferentes queries para diferentes situações
+  d) Podemos utilizar da estrutura condicional `if` para condicionar a execução da função sempre que a condição for satisfeita

@@ -1,0 +1,19 @@
+07 - Agendamento
+
+  Qual a diferença entre dos dados vindos do request.body e request.query
+  a) A diferença esta na forma como os dados são enviados na requisição, no `request.body` os dados são enviados através do corpo da mensagem (ex: dados de um formulário submetido), já no `request.query` os dados são enviados pelo parâmetros da URL da requisição (ex: ?nome=JhonDoe)
+  b) A diferença esta na forma como os dados são enviados na requisição, no `request.query` os dados são enviados através do corpo da mensagem (ex: dados de um formulário submetido), já no `request.body` os dados são enviados pelo parâmetros da URL da requisição (ex: ?nome=JhonDoe)
+  c) A diferença esta na forma como os dados são enviados na requisição, no `request.body` os dados são enviados através do cabeçalho da requisição (ex: headers::content ), já no `request.query` os dados são enviados por uma requisição diferente 
+  d) A diferença esta na forma como os dados são recebidos, no `request.query` os dados são recebidos em um formato `json`, já no `request.body` os dados são recebidos em formato binário
+
+  Como funciona a estratégia de refresh token dentro do ecossistema de autenticação
+  a) Consiste em enviar um token secundário (refresh token) ao provedor e receber em troca um novo token de acesso e consequentemente um novo token secundário
+  b) Consiste em enviar um token secundário (refresh token) ao provedor e consequentemente o token de acesso que havia expirado ter seu tempo de duração estendido
+  c) Consiste em enviar um token secundário (refresh token) ao cliente web para assim validar o token de acesso que eke possui
+  d) Consiste em enviar um token de acesso ao provedor e receber em troca um novo token secundário (refresh token) para ter acesso a aplicação
+
+  Qual o nome da função utilizada para atualizar o token de acesso
+  a) `refreshAccessToken`
+  b) `getNewAccessToken`
+  c) `updateAccessToken`
+  d) `changeAccessToken`
